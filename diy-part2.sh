@@ -26,7 +26,7 @@ sed -i "s/eth1/eth3/g" ./package/base-files/files/etc/board.d/99-default_network
 mkdir package/luci-app-openclash
 cd package/luci-app-openclash
 git init
-git remote add -f origin https://github.com/vernesong/OpenClash.git
+git remote add origin https://github.com/vernesong/OpenClash.git
 git config core.sparsecheckout true
 echo "luci-app-openclash" >> .git/info/sparse-checkout
 git pull --depth 1 origin master
